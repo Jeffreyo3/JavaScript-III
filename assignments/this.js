@@ -1,8 +1,10 @@
 /* The for principles of "this";
 * in your own words. explain the four principle for the "this" keyword below.
 *
-* 1. 
-* 2. 
+* 1. Window/Global Object binding 
+        this refers to the parent object. If no object is specifically defined, this will refer to the entire window as an object.
+* 2. Implicit Binding
+        
 * 3. 
 * 4. 
 *
@@ -10,8 +12,14 @@
 */
 
 // Principle 1
-
 // code example for Window Binding
+
+function windowBind(anything) {
+    console.log(this);
+    return anything;
+}
+windowBind("Hello?");
+
 
 // Principle 2
 
